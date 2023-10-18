@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>carts products</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+
+<body>
+    <header>
+
+
+        <div class="container">
+            <div class="header_content">
+                <a href="index.html" class="brand">shopingcard</a>
+                <nav>
+                    <ul id="links">
+                        <li><a href="login.html">sigin in</a></li>
+                        <li><a href="register.html">sigin up </a></li>
+                    </ul>
+
+                    <ul id="user_info">
+                        <li><a href="#" id="user"></a></li>
+                        <li class="">
+                            <i class="fas fa-shopping-cart shopping-cart"></i>
+                            <span class="badge">1</span>
+
+                            <div class="carts-products">
+                                <div></div>
+                                <a href="cartproducts.html">View All Product</a>
+
+
+                            </div>
+
+
+                        </li>
+                        <li><a href="login.html" id="logout">Log Out</a></li>
+                    </ul>
+
+
+                </nav>
+            </div>
+        </div>
+    </header>
+
+
+
+
+    <section class="home">
+
+
+
+        <div class="container">
+
+            <div class="searchbar">
+                <input placeholder="Search....." id="searchBar" type="text" onkeyup="Search()">
+                <i class="fas fa-search"></i>
+            </div>
+
+            <div class="products" id="products">
+                <div class="product-item" price="300">
+                    <img class="product-item-img" src="images/oppo reno 7.jpg" alt="">
+
+                    <div class="product-item-desc">
+                        <h2 class="titlename">Oppo Reno 7</h2>
+                        <p>the new mobile form oppo company 6-2022</p>
+                        <span>price:300$</span>
+                    </div>
+                    <div class="product-item-action">
+                        <button type="button" class="btn btn-primary add-to-cart">Add To Cart</button>
+                        <i class=" fav far fa-heart"></i>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+
+
+    </section>
+
+    <section class=" container my-5">
+        <br>
+        <hr>
+        <div class=" text-center">
+            <h1 class="text-capitalize"> total prices</h1>
+            <div class=" h1 price">
+
+            </div>
+        </div>
+        <br>
+        <hr>
+    </section>
+
+    <section class=" my-5 container favs text-center">
+        <h1>Favourits</h1>
+        <br>
+
+        <div class="row fav-list">
+
+
+
+
+
+        </div>
+    </section>
+
+
+
+
+    <script src="js/carts.js"></script>
+    <script src="js/user.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+
+</body>
+
+</html>
