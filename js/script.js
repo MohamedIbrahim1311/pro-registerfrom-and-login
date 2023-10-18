@@ -99,14 +99,16 @@ function drawItems() {
   let x = "";
 
   for (const item of products) {
-    if (
-      FavList.find((favItem) => {
-        if (favItem.id === item.id) {
-          return true;
-        }
-      })
-    ) {
-      item.isAddedToFav = true;
+    if (FavList != null) {
+      if (
+        FavList.find((favItem) => {
+          if (favItem.id === item.id) {
+            return true;
+          }
+        })
+      ) {
+        item.isAddedToFav = true;
+      }
     }
     if (item.isAddedToFav) {
       x += ` <div class="product-item" >
